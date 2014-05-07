@@ -1,0 +1,49 @@
+% No 'submit' option for the problems by themselves.
+% \documentclass{harvardml}
+
+% Use the 'submit' option when you submit your solutions.
+\documentclass[submit]{harvardml}
+
+% Put in your full name and email address.
+\name{Your Name}
+\email{email@fas.harvard.edu}
+
+% List any people you worked with.
+\collaborators{%
+  John Doe,
+  Jane Doe
+}
+
+% You don't need to change these.
+\course{CS281-F13}
+\assignment{Assignment \#1}
+\duedate{23:59pm September 20, 2013}
+
+% If you want to include graphics.
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{problem}[5pts]
+I am a problem.
+\end{problem}
+
+I am a solution.  Here is some math.
+\begin{align}
+  \Pr(X < x) &= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^x\exp\left\{-\frac{1}{2}x'^2\right\}\,\mathrm{d}x'
+\end{align}
+
+\begin{problem}[15pts]
+I am another problem.
+\end{problem}
+
+I am another solution.  This one has a figure, below in Figure~\ref{fig}.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{example-fig}
+  \caption{I am a caption.}
+  \label{fig}
+\end{figure}
+
+
+\end{document}
